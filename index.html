@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartoitus — Charting plausibilities</title>
+    <style>
+        /* IDENTIDADE VISUAL — mesma paleta do personal website */
+        :root {
+            --bg-main: #edebe4;
+            --card-bg: #f5f3ee;
+            --card-border: #d1d1d1;
+            --text-primary: #4d4c4a;
+            --text-secondary: #6b6a68;
+            --link-color: #5487b3;
+            --link-hover: #e0b079;
+            --line-color: #c0c0c0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 3rem 2.5rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            font-style: italic;
+            color: var(--link-color);
+            margin-bottom: 2rem;
+            letter-spacing: -0.01em;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--line-color);
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .status {
+            background-color: var(--bg-main);
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .contact {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--line-color);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .contact a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--line-color);
+            margin: 1.5rem 0;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="status">✦ Under construction ✦</div>
+        
+        <h1>Kartoitus</h1>
+        <div class="subtitle">Charting plausibilities</div>
+        
+        <div class="tagline">Mapping ideas, territories, and connections</div>
+        
+        <p>
+            This space is being rebuilt — with essas and reflections<br>
+            at the intersection of history, digital history, cultural heritage and memory.
+        </p>
+        
+        <p>
+            <em>"The burden of plausibility, not the anxiety of proof."</em>
+        </p>
+        
+        <hr>
+        
+        <div class="contact">
+            <div>Be back soon.</div>
+            <div class="social-links">
+                <a href="mailto:seuemail@dominio.com">✉ Email</a>
+                <a href="#">🌐 Personal site</a>
+                <a href="#">📚 GitHub</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

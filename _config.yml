@@ -1,0 +1,26 @@
+title: Kartoitus
+tagline: Charting plausibilities
+description: Essays on history, digital humanities, digital preservation, cultural memory, and plausibility.
+url: "https://www.kartoitus.com.br"
+baseurl: ""
+lang: en
+author:
+  name: Mateus Andrade
+  email: mateus.andrade@ufjf.br
+  website: https://www.professormateus.com
+  github: https://github.com/mateusrandrade
+  bluesky: https://bsky.app/profile/professormateus.bsky.social
+  mastodon: https://digipres.club/@mateusandrade
+
+permalink: /:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+sass:
+  style: compressed
+
+exclude:
+  - Kartoitus_manifesto_v1.md

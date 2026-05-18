@@ -1,0 +1,17 @@
+---
+layout: page
+title: Archive
+subtitle: Essays and notes, arranged without urgency
+permalink: /archive/
+---
+<p>The archive gathers Kartoitus essays as a bibliography in progress: dated entries, brief subtitles, and a preference for continuity over novelty.</p>
+
+<ol class="archive-list">
+  {% for post in site.posts %}
+    <li>
+      <p class="archive-date">{{ post.date | date: "%Y" }} · {{ post.date | date: "%B %-d" }}</p>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.subtitle %}<p class="archive-subtitle">{{ post.subtitle }}</p>{% endif %}
+    </li>
+  {% endfor %}
+</ol>

@@ -7,3 +7,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
+{% assign is_article_like = false %}
+{% if page.layout == 'post' or page.collection == 'posts' or page.collection == 'essays' or page.type == 'article' %}
+  {% assign is_article_like = true %}
+{% endif %}
+{% if is_article_like %}
+<meta name="fediverse:creator" content="@mateusandrade@digipres.club">
+{% endif %}
+
